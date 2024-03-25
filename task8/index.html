@@ -1,0 +1,25 @@
+<div>
+    <label for="contractNumber">Номер контракта:</label>
+    <input type="text" id="contractNumber">
+</div>
+<div>
+    <label for="contractDate">Дата заключения контракта:</label>
+    <input type="date" id="contractDate">
+</div>
+<div>
+    <label for="contractDescription">Описание контракта:</label>
+    <textarea id="contractDescription"></textarea>
+</div>
+<div>
+    <label for="contractStatus">Статус контракта:</label>
+    <select id="contractStatus">
+        <option value="active">Активный</option>
+        <option value="inactive">Неактивный</option>
+    </select>
+</div>
+<div>
+    <label for="contractImage">Изображение контракта:</label>
+    <input type="file" id="contractImage">
+</div>
+<button id="addContractBtn" onclick="addContract()">Добавить контракт</button>
+<div id="contractList"></div>
