@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple-color: rgb(105, 34, 195);
+    --purple-colorA100: rgba(105, 34, 195, 1);
+    --purple-colorA25: rgba(105, 34, 195, .25);
+    --deepSkyBlue-color: rgba(31, 180, 255, 1);
+    --white-color: #fff;
+    --lightTelegraph: #cfcfcf;
+    --font-serif: sans-serif;
+}
+
+body {
+    width:  100%;
+    height:  100vh;
+    display:  flex;
+    align-items:  center;
+    justify-content: center;
+    font-family: var(--font-serif);
+    background: ver(--purple-color);
+    background: linear-gradient(0deg, var(--purple-colorA100) 0%, var(--deepSkyBlue-color) 100%);
+}
+
+.container {
+    width:  100%;
+    max-width:  350px;
+    padding: 20px;
+    border-radius:  12px;
+    background-color:  var(--white-color);
+}
+
+.title {
+    text-align: center;
+    text-transform:  uppercase;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.first-field {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.converter-field label {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    display: inline-block;
+    opacity: .35;
+    font-weight: 600;
+}
+
+.converter-input {
+    width: 100%;
+    height:  35px;
+    border: 1px solid var(--lightTelegraph);
+    border-radius: 7px;
+    padding-inline: 7px;
+}
+
+.converter-variable {
+    width: 100%;
+    display:  flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.converter-variable .converter-field {
+    width: 50%;
+}
+
+.converter-field select {
+    width:  100%;
+    height:  35px;
+}
+
+#convert {
+    width:  100%;
+    height: 35px;
+    border:  none;
+    background-color:  var(--purple-color);
+    font-size:  18px;
+    color: var(--white-color);
+    border-radius:  7px;
+    padding:  7px 7px;
+}
+
+#result {
+    width: 100%;
+    padding: 12px;
+    margin-top:  20px;
+    border:  2px solid var(--purple-color);
+    border-radius: 7px;
+    background-color:  var(--purple-colorA25);
+    color:  var(--purple-color);
+}
