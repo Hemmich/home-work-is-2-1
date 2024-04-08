@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <button id="addProductBtn">Добавить товар</button>
+    <button id="addCategoryBtn">Добавить категорию</button>
+    <button id="addManufacturerBtn">Добавить производителя</button>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Добавить товар</h2>
+            <input type="text" id="productName" placeholder="Название товара">
+            <select id="categorySelect">
+                <option value="" disabled selected>Выберите категорию</option>
+            </select>
+            <select id="manufacturerSelect">
+                <option value="" disabled selected>Выберите производителя</option>
+            </select>
+            <button id="addProduct">Добавить</button>
+        </div>
+    </div>
+
+    <div id="categoryModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Добавить категорию</h2>
+            <input type="text" id="categoryName" placeholder="Название категории">
+            <button id="addCategory">Добавить</button>
+        </div>
+    </div>
+
+    <div id="manufacturerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Добавить производителя</h2>
+            <input type="text" id="manufacturerName" placeholder="Название производителя">
+            <input type="text" id="manufacturerName1" placeholder="Адрес">
+            <input type="text" id="manufacturerName2" placeholder="Номер телефона">
+            <button id="addManufacturer">Добавить</button>
+        </div>
+    </div>
+
+    <div id="displayArea">
+        <h2>Товары</h2>
+        <ul id="productList"></ul>
+        <h2>Категории</h2>
+        <ul id="categoryList"></ul>
+        <h2>Производитель</h2>
+        <ul id="manufacturerList"></ul>
+    </div>
+    
+</body>
+</html>
