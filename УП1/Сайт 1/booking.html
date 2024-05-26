@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бронирование</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Праздник в каждый дом">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="search.html">Поиск</a></li>
+          <li><a href="booking.html.html">Управление бронированием</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="book">
+      <div class="container">
+        <h2>Бронирование</h2>
+        <form action="#">
+          <div class="order-info">
+            <h3>Данные о заказе</h3>
+            <ul>
+              <li><strong>Регион:</strong> <span id="region"></span></li>
+              <li><strong>Локация:</strong> <span id="location"></span></li>
+              <li><strong>Дата:</strong> <span id="date"></span></li>
+              <li><strong>Количество человек:</strong> <span id="count"></span></li>
+              <li><strong>Стоимость:</strong> <span id="price"></span> рублей</li>
+            </ul>
+          </div>
+          <div class="additional-services">
+            <h3>Дополнительные услуги</h3>
+            <ul>
+              <li>
+                <input type="checkbox" name="food" id="food">
+                <label for="food">Организация питания</label>
+              </li>
+              <li>
+                <input type="checkbox" name="animators" id="animators">
+                <label for="animators">Услуги аниматоров</label>
+              </li>
+              <li>
+                <input type="checkbox" name="host" id="host">
+                <label for="host">Услуги ведущего</label>
+              </li>
+              <li>
+                <input type="checkbox" name="taxi" id="taxi">
+                <label for="taxi">Услуги детского такси</label>
+              </li>
+            </ul>
+          </div>
+          <div class="comment">
+            <label for="comment">Комментарий к заказу</label>
+            <textarea name="comment" id="comment"></textarea>
+          </div>
+          <div class="email">
+            <label for="email">Ваш Email</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="total-price">
+            <p>Итоговая стоимость: <span id="total-price"></span> рублей</p>
+          </div>
+          <button type="submit" class="btn">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Получение цены из переменной price
+    const price = 1000;
+
+    // Вывод цены на экран
+    document.getElementById("price").innerHTML = price;
+  </script>
+</body>
+</html>

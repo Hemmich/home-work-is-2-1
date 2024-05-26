@@ -1,0 +1,91 @@
+```Д.А
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Выбор зоны</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Праздник в каждый дом">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="search.html">Поиск</a></li>
+          <li><a href="booking.html">Управление бронированием</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="zone">
+      <div class="container">
+        <h2>Схема локации</h2>
+        <img src="https://restoreum.ru/images/plast.jpg" alt="Схема локации">
+        <ul class="zones">
+          <li>
+            <span>Зона 1</span>
+            <span>1000 рублей</span>
+            <button class="btn" onclick="setPrice(1000)">Выбрать</button>
+          </li>
+          <li>
+            <span>Зона 2</span>
+            <span>1000 рублей</span>
+            <button class="btn" onclick="setPrice(1200)">Выбрать</button>
+          </li>
+          <li>
+            <span>Зона 3</span>
+            <span>1000 рублей</span>
+            <button class="btn" onclick="setPrice(1400)">Выбрать</button>
+          </li>
+        </ul>
+        <a href="booking.html" class="btn" onclick="checkPrice()">Забронировать</a>
+      </div>
+    </section>
+  </main>
+
+<script>
+  let price;
+
+  function setPrice(value) {
+    price = value;
+  }
+
+  function checkPrice() {
+    if (price) {
+      // Переход на страницу бронирования с передачей цены
+      window.location.href = "booking.html" + price;
+    } else {
+      alert("Пожалуйста, выберите зону");
+    }
+  }
+</script>
+
+  <footer>
+    <div class="container">
+      <div class="contact">
+        <p>Телефон: 8 (800) 111-20-20</p>
+        <nav>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="search.html">Локации</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Праздник в каждый дом</p>
+</div>
+    </div>
+  </footer>
+</body>
+</html>

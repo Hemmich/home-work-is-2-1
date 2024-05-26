@@ -1,0 +1,68 @@
+
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+  }
+  
+  #welcome-screen, #game-screen, #result-screen, #game-over-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  #welcome-screen {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  #game-screen {
+    background-color: #006ae4;
+    color: #fff;
+  }
+  
+  #result-screen {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  #game-over-screen {
+    background-color: rgb(92, 74, 74);
+    color: #fff;
+  }
+  
+  #player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+  }
+  
+  #game-area {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .wall {
+    position: absolute;
+    width: 50px;
+    height: 200px;
+    background-color: #333;
+  }
+  
+  .battery {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #0f0;
+  }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinite Runner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="welcome-screen">
+    <h1>Infinite Runner</h1>
+    <p>Enter your name to start:</p>
+    <input type="text" id="player-name" placeholder="Your name">
+    <button id="start-button" disabled>Start</button>
+  </div>
+
+  <div id="game-screen">
+    <div id="player"></div>
+    <div id="game-area"></div>
+    <div id="player-display"></div>
+    <div id="time-display"></div>
+    <div id="power-display"></div>
+    <div id="score-display"></div>
+  </div>
+
+  <div id="result-screen">
+    <h1>Game Over</h1>
+    <p id="result-message"></p>
+    <button id="restart-button">Restart</button>
+  </div>
+
+  <div id="game-over-screen">
+    <h1>Game Over</h1>
+    <p>You ran out of power!</p>
+    <button id="restart-button-2">Restart</button>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const startButton = document.getElementById('start-button');
+      const playerNameInput = document.getElementById('player-name');
+
+      // Включаем кнопку "Start", когда введено имя игрока
+      playerNameInput.addEventListener('input', () => {
+        if (playerNameInput.value.trim() !== '') {
+          startButton.disabled = false;
+        } else {
+          startButton.disabled = true;
+        }
+      });
+
+      // Логика для начала игры
+      startButton.addEventListener('click', () => {
+        const playerName = playerNameInput.value.trim();
+        if (playerName !== '') {
+          document.getElementById('welcome-screen').style.display = 'none';
+          document.getElementById('game-screen').style.display = 'block';
+          // Начать игру и другие действия
+          console.log(`Welcome, ${playerName}! Let's start the game.`);
+        }
+      });
+
+      // Скрываем экран игры и результат по умолчанию
+      document.getElementById('game-screen').style.display = 'none';
+      document.getElementById('result-screen').style.display = 'none';
+      document.getElementById('game-over-screen').style.display = 'none';
+    });
+  </script>
+</body>
+</html>

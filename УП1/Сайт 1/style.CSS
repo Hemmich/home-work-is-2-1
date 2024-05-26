@@ -1,0 +1,401 @@
+/* Сброс стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* Шапка сайта */
+header {
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.logo {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #333;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+/* Введение */
+section.intro {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.intro h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.intro button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Алгоритм бронирования */
+section.algorithm {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.algorithm h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.algorithm ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.algorithm li {
+  width: 200px;
+  text-align: center;
+}
+
+.algorithm li img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.algorithm li p {
+  font-size: 16px;
+}
+
+/* О нас */
+section.about {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.about h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.about .info {
+  float: left;
+  width: 60%;
+}
+
+.about .reviews {
+  float: right;
+  width: 40%;
+}
+
+.about .info p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.about .reviews h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about .review {
+  background-color: #f5f5f5;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.about .review p {
+  font-size: 16px;
+}
+
+.about .author {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Поиск */
+section.search {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.search h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.search form {
+  width: 60%;
+}
+
+.search .fields {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.search input,
+.search select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.search button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Акции */
+section.actions {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.actions h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.actions .slider {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.actions .slide {
+  width: 300px;
+  height: 400px;
+  float: left;
+  margin-right: 20px;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.actions .slide img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.actions .slide h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.actions .slide p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.actions .slide a {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Подписка на акции */
+section.subscribe {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.subscribe h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.subscribe form {
+  width: 60%;
+}
+
+.subscribe input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.subscribe button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Результаты поиска */
+section.search-results {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.search-results h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.search-results table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.search-results th,
+.search-results td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.search-results th {
+  text-align: center;
+  font-weight: bold;
+}
+
+.search-results tr:hover {
+  background-color: #f5f5f5;
+}
+
+.search-results a {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Выбор зоны */
+section.zone {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.zone h2
+{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.zone img {
+  width: 100%;
+}
+
+.zone ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.zone li {
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.zone li span:first-child {
+  font-weight: bold;
+}
+
+.zone li span:last-child {
+  color: #ff0000;
+}
+
+.book {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.book h2 {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.order-info ul {
+  list-style: none;
+}
+
+.order-info li {
+  margin-bottom: 10px;
+}
+
+.additional-services ul {
+  list-style: none;
+}
+
+.additional-services li {
+  margin-bottom: 10px;
+}
+
+.comment {
+  margin-bottom: 20px;
+}
+
+.comment textarea {
+  width: 100%;
+  height: 100px;
+}
+
+.email {
+  margin-bottom: 20px;
+}
+
+.total-price {
+  text-align: center;
+  margin-bottom: 20px;
+}

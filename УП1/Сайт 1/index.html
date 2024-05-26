@@ -1,0 +1,184 @@
+```Д.А
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Праздник в каждый дом</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Праздник в каждый дом">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">главная</a></li>
+          <li><a href="search.html">Поиск</a></li>
+          <li><a href="booking.html">Управление бронированием</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="container">
+        <h1>Подарим волшебство для Ваших детей!</h1>
+        <p>Главная цель нашей компании - сделать праздничные дни незабываемыми для детей и их родителей.</p>
+        <button class="btn">Заказать праздник</button>
+      </div>
+    </section>
+
+    <section class="algorithm">
+      <div class="container">
+        <h2>Как заказать праздник</h2>
+        <ul class="steps">
+          <li>
+            <img src="step1.png" alt="Выбор даты">
+            <p>Выберите дату праздника</p>
+          </li>
+          <li>
+            <img src="step2.png" alt="Выбор количества участников">
+            <p>Укажите количество взрослых и детей</p>
+          </li>
+          <li>
+            <img src="step3.png" alt="Выбор локации">
+            <p>Выберите подходящую локацию</p>
+          </li>
+          <li>
+            <img src="step4.png" alt="Бронирование зоны">
+            <p>Забронируйте конкретную зону</p>
+          </li>
+          <li>
+            <img src="step5.png" alt="Выбор дополнительных услуг">
+            <p>Выберите дополнительные услуги</p>
+          </li>
+          <li>
+            <img src="step6.png" alt="Оформление заказа">
+            <p>Оформите заказ</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="info">
+          <h2>О нас</h2>
+          <p>Наша цель - сделать праздничные дни незабываемыми для детей и их родителей.</p>
+          <p>Мы предоставляем широкий спектр услуг, чтобы ваш праздник прошел идеально.</p>
+          <p>Наш девиз: "Подарим волшебство для Ваших детей!"</p>
+        </div>
+        <div class="reviews">
+          <h2>Отзывы наших клиентов</h2>
+          <div class="review">
+            <p>Отличный сервис! Праздник прошел на ура.</p>
+            <div class="author">
+              <img src="client1.png" alt="Клиент 1">
+              <p>Анна Иванова</p>
+            </div>
+          </div>
+          <div class="review">
+            <p>Спасибо за чудесный праздник для моего сына! Все были в восторге.</p>
+            <div class="author">
+              <img src="client2.png" alt="Клиент 2">
+              <p>Сергей Петров</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="search">
+      <div class="container">
+        <h2>Найти локацию</h2>
+        <form action="search.html" method="get">
+          <div class="fields">
+            <label for="region">Регион</label>
+            <select name="region" id="region">
+              <option value="Москва">Москва</option>
+              <option value="Санкт-Петербург">Санкт-Петербург</option>
+            </select>
+
+            <label for="date">Дата мероприятия</label>
+            <input type="date" name="date" id="date">
+
+            <label for="adults">Количество взрослых</label>
+            <input type="number" name="adults" id="adults" min="1" max="50">
+
+            <label for="children">Количество детей</label>
+            <input type="number" name="children" id="children" min="1" max="50">
+          </div>
+          <button type="submit" class="btn">Найти</button>
+        </form>
+      </div>
+    </section>
+    
+    <section class="actions">
+      <div class="container">
+        <h2>Акции</h2>
+        <div class="slider">
+          <div class="slide">
+            <img src="action1.png" alt="Акция 1">
+            <div class="info">
+              <h3>Акция 1</h3>
+<p>Скидка 10% на все праздники в мае</p>
+              <a href="#" class="btn">Подробнее</a>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="action2.png" alt="Акция 2">
+            <div class="info">
+              <h3>Акция 2</h3>
+              <p>Подарок при заказе праздника на сумму от 10000 рублей</p>
+              <a href="#" class="btn">Подробнее</a>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="action3.png" alt="Акция 3">
+            <div class="info">
+              <h3>Акция 3</h3>
+              <p>Бесплатная доставка при заказе детского такси</p>
+              <a href="#" class="btn">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe">
+      <div class="container">
+        <h2>Подпишитесь на закрытые акции</h2>
+        <form action="subscribe.php" method="post">
+          <input type="email" name="email" id="email" placeholder="Введите свой email">
+          <button type="submit" class="btn">Подписаться</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="contact">
+        <p>Телефон: 8 (800) 111-20-20</p>
+        <nav>
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Локации</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Праздник в каждый дом</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
